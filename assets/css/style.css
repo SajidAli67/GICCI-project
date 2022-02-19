@@ -190,6 +190,20 @@ header .header-text h3 {
   border-radius: 45px;
   color: #fff;
 }
+.profile .profile-img::before{
+  content: "";
+  position:absolute;
+  top:0;
+  left:10px;
+  width:50%;
+  height:70%;
+  border:6px solid #F60F1A;
+  border-right:3px solid transparent;
+  border-bottom:3px solid transparent;
+  transform: scale(1,1);
+  transition: all 0.50s linear;
+}
+
 footer {
   background: #fafaff;
   text-align: center;
@@ -226,6 +240,11 @@ border-radius: 14.5165px;
 footer .custom-input{
   border: none;
 }
+footer .fa-envelope{
+  color: #9092B0;
+  text-align: center;
+  padding:1rem;
+}
 footer .btn-send{
   font-family: Nunito Sans;
 font-style: normal;
@@ -253,3 +272,118 @@ footer  ul li {
 footer  ul li a {
   color: #fff;
 }
+/* login pages */
+.login-header nav {
+  background: #F8F8F8;
+}
+.login-header nav ul li{
+  float: left;
+  list-style: none;
+  text-decoration: none;
+}
+.login-header nav ul li a{
+  color: #544E4E;
+  padding-top: 1rem;
+  font-size: 26px
+}
+.login-container{
+  margin-top: 6.25rem;
+  display: flex;
+  justify-content: center;
+}
+.form-container{
+  width: 30rem;
+  height: 37rem;
+  background: #FFFFFF;
+border: 0.5px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+/* Card Drop Shadow */
+
+box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+border-radius: 23px;
+padding :65px;
+float: right;
+}
+.btn-blue{
+  background-color: #689DED;
+  width: 154px;
+  height: 49px;
+  margin-top: 0.9rem;
+  padding: 1.25rem 1.8rem;
+  text-align: center;
+  display: flex;
+  color: #fff !important;
+  margin-top: 12px;
+  align-items: center;
+  border-radius: 6px;
+}
+.login-p{
+  padding-top: 41px;
+  text-align: center;
+  font-weight: 300;
+font-size: 1.5rem;
+}
+.btn-login{
+  width: 100%;
+  background-color:#689DED;
+  color: #fff;
+  font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 1.75rem;
+margin-top: 43px;
+}
+.form-header{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+
+color: #1D3245;
+
+}
+.text-required{
+  color: #F60F1A;
+}
+.form-container .custom-input{
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  opacity: 0.3;
+  height: 50px;
+}
+.form-container label{
+  font-family:" Montserrat";
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+color: #000000;
+opacity: 0.7;
+margin-top: 1rem;
+}
+.form-container p{
+  font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+  margin-top: 12px;
+  text-align: center;
+}
+.footer-login{
+  margin-top: 100px;
+  height: 78px;
+  background: #F8F8F8;
+  color: #1D3245;
+}
+.footer-link{
+  color: #1D3245;
+}
+.footer-text-right{
+  text-align: right;
+}
+.footer-text-left{
+  text-align: left;
+}
+

@@ -3,7 +3,21 @@
 
 }
 @media(max-width: 768px){
-  
+    .login-header nav ul li a{
+        padding-top: -10rem;
+      }
+      .btn-blue{
+
+        margin-top: 5px;
+        padding: 1.25rem 1.8rem;
+      
+      }
+      .footer-text-right{
+        text-align: center;
+      }
+      .footer-text-left{
+        text-align: center;
+      }
 }
 @media (max-width: 576px) {
   

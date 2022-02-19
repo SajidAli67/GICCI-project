@@ -1,0 +1,255 @@
+body {
+  font-family: "Roboto", Times, serif;
+  overflow-x: hidden;
+  width: 100vw;
+  max-height: 100vh;
+}
+.bg-red {
+  background-color: #c2272d;
+}
+.top-margin {
+  margin-top: 7rem;
+}
+.top-text {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: #000;
+}
+header nav {
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+header nav .navbar-brand {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+header nav a {
+  color: #000;
+  margin-right: 1rem;
+}
+header .bg-outline {
+  color: #ef941f;
+  background: #ffffff;
+  text-align: center;
+  width: 101px;
+  height: 42px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 42px;
+}
+header .btn-red {
+  color: #fff;
+  background: #c2272d;
+  text-align: center;
+  width: 101px;
+  height: 42px;
+  border-radius: 42px;
+}
+/* End of nav */
+header .banner {
+  margin-top: 2.5rem;
+
+  color: #fff;
+}
+header .header-text {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44.2729px;
+  padding: 2rem 5rem;
+  color: #fff;
+}
+header .header-text h3 {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+}
+.goal h1 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.goal p {
+  font-size: 1.47rem;
+  width: 482px;
+  margin: 1rem 2rem;
+}
+.bg-gray {
+  background: #f8f7f7;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+}
+.card-section {
+  margin-top: 5rem;
+  height: 412px;
+  /*  */
+}
+.card-section .card {
+  padding: 1rem;
+  height: 360px;
+  text-align: center;
+  line-height: 24px;
+  /*  */
+}
+.card-title {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #000000;
+}
+.card-section h1 {
+  color: #fff;
+  margin: 86px 0px 0px 43px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 67px;
+}
+.card-section h1 + p {
+  color: #fff;
+  margin: 30px 36px 0px 43px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+}
+.middel-text {
+  text-align: center;
+  font-style: italic;
+  left: 193px;
+  font-size: 48px;
+  line-height: 140%;
+}
+.bg-white {
+  background: #ffffff;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+  padding: 4rem;
+  text-align: center;
+  height: 100%;
+}
+.logoes h1 {
+  padding: 4rem 3rem 0rem 3rem;
+  color: #fff;
+}
+.logoes p {
+  color: #fff;
+  padding: 2rem 3rem 2rem 3rem;
+  font-size: 22px;
+}
+.carousel-indicators {
+  bottom: -3rem;
+}
+.carousel-indicators li {
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  background-color: #c4c4c4;
+}
+.carousel-indicators .active {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  background-color: #c4c4c4;
+}
+.logo-padding {
+  padding-top: 4rem;
+}
+.img-padding {
+  padding-top: 1rem;
+}
+.message-section {
+  padding-left: 16rem;
+}
+.message-section p {
+  width: 450px;
+  margin-top: 2rem;
+  font-size: 22px;
+}
+.contact h1 {
+  color: #fff;
+  padding: 5rem 1rem 0px 2rem;
+}
+.contact p {
+  color: #fff;
+  padding: 1rem 1rem 3rem 2rem;
+}
+.contact .custom-input {
+  border: none;
+  height: 43px;
+}
+.contact .custom-textarea {
+  border: none;
+}
+.btn-red {
+  background-color: #c2272d;
+  border-radius: 45px;
+  color: #fff;
+}
+footer {
+  background: #fafaff;
+  text-align: center;
+  padding: 4.3rem 0px;
+}
+footer h3 {
+  font-family: " Nunito Sans";
+  font-weight: bold;
+  font-size: 18px;
+  color: #eb801d;
+}
+footer h1 {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #2D3150;
+}
+footer p{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-size: 1.8rem;
+  color: #2D3150;
+}
+footer .custom-input-group{
+  width: 464.53px;
+  height: 52.26px;
+  margin: auto;
+  background: #FFF;
+box-shadow: 0px 7.25824px 14.5165px rgba(54, 58, 120, 0.1);
+border-radius: 14.5165px;
+}
+footer .custom-input{
+  border: none;
+}
+footer .btn-send{
+  font-family: Nunito Sans;
+font-style: normal;
+font-weight: 600;
+  margin: 5% 0.7rem 0px 0px;
+  border-radius: 14px;
+  background: #F60F1A;
+  color: #fff;
+  word-spacing: 10px;
+}
+footer  ul {
+  margin: auto;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+footer  ul li {
+  padding: 0px 0.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  padding-top: 0.4rem;
+  background: #373C59;
+}
+footer  ul li a {
+  color: #fff;
+}

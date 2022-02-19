@@ -20,5 +20,33 @@
       }
 }
 @media (max-width: 576px) {
-  
+    .form-container{
+        width: 30rem;
+        padding :30px;
+    }
+    .login-header nav ul li{
+        margin-top: -3.91rem;
+      }
+    .btn-blue{
+        margin-top: 0rem;
+      }
+}
+@media (max-width: 390px) {
+    .navbar-brand{
+        font-size: 1.4rem !important;
+    }
+    .form-container{
+        width: 95%;
+        padding :30px;
+    }
+    .login-header nav ul li{
+        margin-top: -3.91rem;
+        font-size: 10px;
+      }
+    .btn-blue{
+        margin: 1rem -2rem;
+      }
+      .login-p{
+      font-size: 1rem;
+      }
 }

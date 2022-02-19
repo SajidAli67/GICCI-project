@@ -190,18 +190,18 @@ header .header-text h3 {
   border-radius: 45px;
   color: #fff;
 }
-.profile .profile-img::before{
+.profile .profile-img::before {
   content: "";
-  position:absolute;
-  top:0;
-  left:10px;
-  width:50%;
-  height:70%;
-  border:6px solid #F60F1A;
-  border-right:3px solid transparent;
-  border-bottom:3px solid transparent;
-  transform: scale(1,1);
-  transition: all 0.50s linear;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 50%;
+  height: 70%;
+  border: 6px solid #f60f1a;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: scale(1, 1);
+  transition: all 0.5s linear;
 }
 
 footer {
@@ -221,91 +221,90 @@ footer h1 {
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 2rem;
-  color: #2D3150;
+  color: #2d3150;
 }
-footer p{
-  font-family: 'Nunito Sans';
+footer p {
+  font-family: "Nunito Sans";
   font-style: normal;
   font-size: 1.8rem;
-  color: #2D3150;
+  color: #2d3150;
 }
-footer .custom-input-group{
+footer .custom-input-group {
   width: 464.53px;
   height: 52.26px;
   margin: auto;
-  background: #FFF;
-box-shadow: 0px 7.25824px 14.5165px rgba(54, 58, 120, 0.1);
-border-radius: 14.5165px;
+  background: #fff;
+  box-shadow: 0px 7.25824px 14.5165px rgba(54, 58, 120, 0.1);
+  border-radius: 14.5165px;
 }
-footer .custom-input{
+footer .custom-input {
   border: none;
 }
-footer .fa-envelope{
-  color: #9092B0;
+footer .fa-envelope {
+  color: #9092b0;
   text-align: center;
-  padding:1rem;
+  padding: 1rem;
 }
-footer .btn-send{
+footer .btn-send {
   font-family: Nunito Sans;
-font-style: normal;
-font-weight: 600;
+  font-style: normal;
+  font-weight: 600;
   margin: 5% 0.7rem 0px 0px;
   border-radius: 14px;
-  background: #F60F1A;
+  background: #f60f1a;
   color: #fff;
   word-spacing: 10px;
 }
-footer  ul {
+footer ul {
   margin: auto;
   font-size: 1.5rem;
   margin-top: 2rem;
 }
-footer  ul li {
+footer ul li {
   padding: 0px 0.5rem;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
   text-align: center;
   padding-top: 0.4rem;
-  background: #373C59;
+  background: #373c59;
 }
-footer  ul li a {
+footer ul li a {
   color: #fff;
 }
 /* login pages */
 .login-header nav {
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
-.login-header nav ul li{
+.login-header nav ul li {
   float: left;
   list-style: none;
   text-decoration: none;
 }
-.login-header nav ul li a{
-  color: #544E4E;
+.login-header nav ul li a {
+  color: #544e4e;
   padding-top: 1rem;
-  font-size: 26px
+  font-size: 26px;
 }
-.login-container{
-  margin-top: 6.25rem;
+.login-container {
+  padding: 6.25rem 0px 100px 0px;
   display: flex;
   justify-content: center;
 }
-.form-container{
+.form-container {
   width: 80%;
-  height: 37rem;
-  background: #FFFFFF;
-border: 0.5px solid rgba(0, 0, 0, 0.2);
-box-sizing: border-box;
-/* Card Drop Shadow */
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  /* Card Drop Shadow */
 
-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
-border-radius: 23px;
-padding :65px;
-float: right;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  padding: 65px;
+  float: right;
 }
-.btn-blue{
-  background-color: #689DED;
+.btn-blue {
+  background-color: #689ded;
   width: 154px;
   height: 49px;
   margin-top: 0.9rem;
@@ -317,73 +316,130 @@ float: right;
   align-items: center;
   border-radius: 6px;
 }
-.login-p{
+.login-p {
   padding-top: 41px;
   text-align: center;
   font-weight: 300;
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-.btn-login{
+.btn-login {
   width: 100%;
-  background-color:#689DED;
+  background-color: #689ded;
   color: #fff;
-  font-family: 'Nunito Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 1.75rem;
-margin-top: 43px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.75rem;
+  margin-top: 43px;
 }
-.form-header{
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 44px;
-
-color: #1D3245;
-
+.form-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1d3245;
 }
-.text-required{
-  color: #F60F1A;
+.text-required {
+  color: #f60f1a;
 }
-.form-container .custom-input{
-  background: #FFFFFF;
+.form-container .custom-input {
+  background: #ffffff;
   border: 2px solid #000000;
   opacity: 0.3;
   height: 50px;
 }
-.form-container label{
-  font-family:" Montserrat";
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 22px;
-/* identical to box height */
-color: #000000;
-opacity: 0.7;
-margin-top: 1rem;
+.form-container label {
+  font-family: " Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  opacity: 0.7;
+  margin-top: 1rem;
 }
-.form-container p{
-  font-family: 'Nunito Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
+.form-container p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
   margin-top: 12px;
   text-align: center;
 }
-.footer-login{
-  margin-top: 100px;
+.footer-login {
   height: 78px;
-  background: #F8F8F8;
-  color: #1D3245;
+  background: #f8f8f8;
+  color: #1d3245;
 }
-.footer-link{
-  color: #1D3245;
+.footer-link {
+  color: #1d3245;
 }
-.footer-text-right{
+.footer-text-right {
   text-align: right;
 }
-.footer-text-left{
+.footer-text-left {
   text-align: left;
 }
+.register-bg {
+  background-image: url("../imges/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0px;
+}
+.verfiy p {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 20px;
+  /* identical to box height */
 
+  text-align: center;
+}
+.verfiy a {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center !important;
+  padding-left: 30%;
+  text-decoration-line: underline;
+
+  color: #00488e;
+}
+.otp-input {
+  margin: 2rem 0px;
+}
+.otp-custom-input {
+  background: #ffffff;
+  opacity: 0.3;
+  border: 0.5px solid #707070;
+}
+.otp-text {
+  font-family: "Nunito Sans";
+  font-size: 18px;
+}
+.otp-time {
+  color: #00488e;
+  font-size: 18px;
+  float: right;
+}
+.success-form-container {
+  width: 50%;
+  margin: auto;
+  background: #ffffff;
+  padding: 3rem 2rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  text-align: center;
+
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+}
+.success-form-container a {
+  font-size: 1.8rem;
+  color: #00488e;
+}

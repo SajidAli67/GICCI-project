@@ -1,52 +1,76 @@
 /*---Media Queries --*/
 @media (max-width: 992px) {
-
 }
-@media(max-width: 768px){
-    .login-header nav ul li a{
-        padding-top: -10rem;
-      }
-      .btn-blue{
-
-        margin-top: 5px;
-        padding: 1.25rem 1.8rem;
-      
-      }
-      .footer-text-right{
-        text-align: center;
-      }
-      .footer-text-left{
-        text-align: center;
-      }
+@media (max-width: 768px) {
+  .login-header nav ul li a {
+    padding-top: -10rem;
+  }
+  .btn-blue {
+    margin-top: 5px;
+    padding: 1.25rem 1.8rem;
+  }
+  .footer-text-right {
+    text-align: center;
+  }
+  .footer-text-left {
+    text-align: center;
+  }
+  .success-form-container{
+    width:80%;
+  }
 }
 @media (max-width: 576px) {
-    .form-container{
-        width: 30rem;
-        padding :30px;
-    }
-    .login-header nav ul li{
-        margin-top: -3.91rem;
-      }
-    .btn-blue{
-        margin-top: 0rem;
-      }
+  .form-container {
+    width: 23rem;
+    padding: 30px;
+  }
+  .login-header nav ul li {
+    
+    margin-left: -2rem;
+    font-size: 14px !important;
+  }
+  .login-header nav ul li a{
+    margin-top: 0rem;
+    margin-right: 2rem;
+    font-size: 16px;
+  }
+  .btn-blue {
+    width: 80px;
+    font-size: 14px !important;
+    left: 20px;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    margin-top: -0.2rem;
+    margin-right: -1rem
+  }
+  .success-form-container{
+    width:95%;
+  }
 }
 @media (max-width: 390px) {
-    .navbar-brand{
-        font-size: 1.4rem !important;
-    }
-    .form-container{
-        width: 95%;
-        padding :30px;
-    }
-    .login-header nav ul li{
-        margin-top: -3.91rem;
-        font-size: 10px;
-      }
-    .btn-blue{
-        margin: 1rem -2rem;
-      }
-      .login-p{
-      font-size: 1rem;
-      }
+  .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+  .form-container {
+    width: 95%;
+    padding: 30px;
+  }
+  .login-header nav ul li {
+    margin-top: -3.91rem;
+    font-size: 10px;
+  }
+  .login-header nav ul li a{
+    margin-top: 4rem;
+    margin-right: 2rem;
+    font-size: 16px;
+  }
+  .btn-blue {
+    width: 80px;
+    font-size: 14px;
+    left: 20px;
+    padding-left: 12px;
+  }
+  .login-p {
+    font-size: 1rem;
+  }
 }

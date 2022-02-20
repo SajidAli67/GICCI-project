@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Nunito+Sans:ital,wght@0,400;1,300&family=Roboto&family=Rubik:wght@300;500&display=swap");
 body {
   font-family: "Roboto", Times, serif;
   overflow-x: hidden;
@@ -442,4 +443,374 @@ footer ul li a {
 .success-form-container a {
   font-size: 1.8rem;
   color: #00488e;
+}
+/* Dashboard */
+.dashboar-bg {
+  background-color: #e5e5e5;
+}
+.dashboard-header nav {
+  background-color: #f8f8f8;
+}
+.dashboard-header nav ul {
+  display: flex;
+  margin-top: 2rem;
+}
+.dashboard-header nav ul {
+  list-style: none;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.top-dropdown-menu {
+  margin-left: -8rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212529;
+}
+.dropdown-icon {
+  padding-top: 1rem;
+}
+aside {
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid #c4c4c4;
+  padding-top: 82px;
+  float: left;
+  z-index: 100;
+  overflow-x: hidden;
+  transition: all 0.3s;
+}
+aside .btn-color,
+.btn-updete {
+  font-family: "Nunito Sans";
+  font-weight: 300;
+  width: 13rem;
+  height: 2.9rem;
+  color: #fff;
+  background: #689ded;
+  text-align: center;
+  border-radius: 6px;
+  margin-left: 42px;
+}
+.btn-updete {
+  color: #000;
+  background: #f8f8f8;
+}
+.btn-updete:hover {
+  transform: scale(0.95);
+}
+aside ul li {
+  width: 500px;
+  height: 20px;
+  list-style: none;
+  margin-left: -42px !important;
+  padding-top: 3.5rem;
+  display: block;
+}
+aside ul li a {
+  padding: 20px 172px 20px 30px;
+  margin-top: 20px;
+  font-family: " Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+.active-nav {
+  background-color: #e8f0fe;
+  width: 500px;
+  height: 30px;
+  padding: 20px 172px 20px 30px;
+}
+aside ul li a:hover {
+  background-color: #e8f0fe;
+  width: 100%;
+  height: 30px;
+  padding: 20px 172px 20px 30px;
+  color: #000;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+.main-container {
+  width: 78%;
+  height: 100vh;
+  float: right;
+  padding: 2rem 1rem;
+  z-index: -1;
+  margin-right: 20px;
+}
+.aside-show {
+  background-color: transparent;
+  border: none;
+  color: #c4c4c4;
+  font-size: 2rem;
+  display: none;
+}
+.aside-close {
+  background-color: transparent;
+  border: none;
+  color: #c4c4c4;
+  font-size: 2rem;
+  float: right;
+  margin: -80px 20px;
+  display: none;
+}
+.text-business-name,
+.text-business-city {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin: -1rem 0rem 1rem 2rem;
+}
+.text-business-city {
+  font-size: 14px;
+}
+.dashboard-serach {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.4rem;
+  font-family: "Nunito Sans";
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+.dashboard-serach:hover,
+.dashboard-serach:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.main-container .custom-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.4rem;
+  font-family: "Nunito Sans";
+  padding: 2rem;
+  margin-top: 1rem;
+}
+.main-container .custom-card-text {
+  font-size: 1.1rem;
+  color: #000000;
+}
+.custom-card-text-p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.custom-card-desc {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 19px;
+  font-weight: 300;
+  color: #000000;
+}
+.dashboard-top-heading {
+  font-family: "Montserrat";
+
+  padding-bottom: 2rem;
+}
+.border-bottom {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #c4c4c4;
+}
+.dashboard-top-heading h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #474747;
+}
+.product-card {
+  font-family: "Rubik";
+  background: #f8f8f8;
+  border-radius: 6px;
+  border: none;
+  margin-top: 2rem;
+}
+.product-card .card-top-img img {
+  width: 100%;
+  height: 100%;
+}
+.product-card .card-title {
+  font-weight: 500;
+  font-size: 18.5829px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #000000;
+}
+.product-card .card-text {
+  font-size: 14px;
+  line-height: 180%;
+  color: #808080;
+  font-weight: 300;
+  opacity: 0.7;
+}
+.product-card .card-price {
+  font-weight: 500;
+  font-size: 20.29px;
+  line-height: 120%;
+  color: #941b0c;
+}
+.product-textarea,
+.product-input {
+  height: 3rem;
+  background: #ffffff;
+  opacity: 0.3;
+  border: 2px solid #000000;
+}
+.product-textarea {
+  height: 8rem;
+}
+.main-container label {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #000000;
+
+  opacity: 0.7;
+}
+.social-title {
+  font-family: " Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+}
+.btn-social {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  width: 10rem;
+  height: 2.8rem;
+  background-color: #689ded;
+  color: #fff;
+}
+.business-update-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  color: #181818;
+}
+.btn-update {
+  background: #e8f0fe;
+  border-radius: 20px;
+  color: #000;
+}
+.profile-info {
+  width: 34rem;
+  height: 13rem;
+  background: #f8f8f8;
+  padding: 3rem;
+}
+.profile-info p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.profile_edit {
+  margin: -30px 40px;
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00488e;
+}
+.add-business {
+  width: 213px;
+  height: 40px;
+  left: 384px;
+  top: 686px;
+  background: #e8f0fe;
+  border-radius: 20px;
+  color: #000;
+}
+.password-change {
+  width: 557px;
+  height: 48px;
+  background: #f8f8f8;
+  margin-bottom: 10rem;
+}
+.password-change .card-header {
+  border: none;
+  background-color: #f8f8f8;
+}
+.password-change .card-header a {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #00488e;
+}
+.user-profile-info {
+  width: 42rem;
+  background: #f8f8f8;
+  padding: 2rem;
+  text-align: center;
+}
+.user-profile-info h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  color: #181818;
+}
+.user-profile-info p {
+  font-size: 18px;
+  color: #000000;
+}
+.user-profile-info  .business-desc{
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  line-height: 19px;  
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+.business-heading-profile{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding-top: 1rem;
+}
+.business-detial{
+  width: 400px;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+  color: #000000;
+}
+.btn-business-view{
+  width: 151.23px;
+  height: 37px;
+left: 652px;
+top: 824px;
+
+background: #689DED;
+border-radius: 6px;
+color: #fff;
+margin-top: 20px;
 }

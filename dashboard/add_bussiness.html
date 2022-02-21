@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title>GICTORY !</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/respon.css">
+    <link rel="stylesheet" type="text/css" href="../assets/lib/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../assets/lib/owl/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/lib/owl/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../assets/lib/aos/aos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Nunito+Sans:ital,wght@0,400;1,300&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Header Start -->
+    <header class="dashboard-header">
+        <!-- Nav Start  -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="aside-show" id="aside-show" style="display:block"><i class="fas fa-bars"></i></button>
+                <h2 class="navbar-brand">GICTORY</h2>
+                <ul class=" ml-auto">
+                    <li><a class="nav-link nav-active" href="dashboard.html">Shri Shri User Panwar</a> </li>
+                    <li><a class="nav-link" href="dashboard.html"><img src="../assets/imges/profile_img.png" alt="GICCI"
+                                class="img-fluid"> </a> </li>
+                    <div class="dropdown show dropdown-icon">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        </a>
+                        <div class="dropdown-menu top-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="profile.html">My profile</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <!-- Nav End  -->
+
+    </header>
+    <aside id="aside_bar" class="aside-business">
+        <p class="text-business-name">My Business Name</p>
+        <p class="text-business-city"> Mumbai, India</p>
+        <button class="aside-close" id="aside-close"><i class="fas fa-times"></i></button>
+        <a href="update_business.html" class="nav-link btn-updete"> Update My Business</a>
+        <ul>
+            <li><a href="dashboard.html" class="active-nav"><img src="../assets/imges/home.png" alt="GICCI"
+                        class="img-fluid "> Home</a></li>
+            <li><a href="product.html"><img src="../assets/imges/services.png" alt="GICCI" class="img-fluid"> Product or
+                    Services</a></li>
+            <li><a href="social_linkes.html"><img src="../assets/imges/social.png" alt="GICCI" class="img-fluid"> Social
+                    Media Links</a></li>
+            <li><a href="profile.html"><img src="../assets/imges/setting.png" alt="GICCI" class="img-fluid"> Setting</a>
+            </li>
+            <li><a href="#"><img src="../assets/imges/feetback.png" alt="GICCI" class="img-fluid"> Feedback</a></li>
+        </ul>
+    </aside>
+    <div class="business-main-container">
+        <div class="container">
+            <div class="business-add-container">
+                <h3>Add your business</h3>
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar" class="progressbar">
+                        <li class="active-progress"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul> <!-- fieldsets -->
+                    <fieldset>
+                        <div class="business-form-card">
+                            <h3 class="business-padding">Tell us a little bit about your business?</h3>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="name">Product name</label>
+                                    <input type="text" class="form-control  product-input" id="name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="category">Select a category</label>
+                                    <input type="text" class="form-control  product-input" id="category">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="category">Select a category</label>
+                                    <input type="text" class="form-control  product-input" id="category">
+                                </div>
+                            </div>
+                            <h4>By continue you will agree to the our privacy policy, <a href="#">terms of services and
+                                    condations.</a></h4>
+                            <input type="button"class="next btn btn-login" value="Next" id="next" />
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <div class="business-form-card">
+                            <h3 class="business-padding">Where is your business located?</h3>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="country">Country </label>
+                                    <input type="text" class="form-control  product-input" id="country">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="state">State</label>
+                                    <select class="form-control product-input">
+                                        <option>State</option>
+                                        <option>State</option>
+                                        <option>State</option>
+                                        <option>State</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control  product-input" id="city">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="street">Street address</label>
+                                    <input type="text" class="form-control  product-input" id="street">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="pin_code">Pin Code</label>
+                                    <input type="text" class="form-control  product-input" id="pin_code">
+                                </div>
+                            </div>
+                            <input type="button"class="next btn btn-login" value="Next" id="next" />
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <div class="business-form-card">
+                            <h3 class="business-padding">How to connect with your bussiness?</h3>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="email">Business email </label>
+                                    <input type="text" class="form-control  product-input" id="email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="phone">Business phone</label>
+                                    <input type="text" class="form-control  product-input" id="phone">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control  product-input" id="city">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="street">Website</label>
+                                    <input type="text" class="form-control  product-input" id="street">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <label for="pin_code">Pin Code</label>
+                                    <input type="text" class="form-control  product-input" id="pin_code">
+                                </div>
+                            </div>
+                            <input type="button"class="next btn btn-login" value="Next" id="next" />
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <div class="business-form-card">
+                            <h3 class="business-padding">Upload Logo of your business</h3>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <div class="custom-file-btn">
+                                        <label for="">Upload Image</label>
+                                        <label class="upload-file-btn"><span class="upload-text">Click to browse file</span><i class="fas fa-ellipsis-h upload-icon"></i></label>
+                                        <input type="file" name="" accept="image/*" onchange="loadFile(event)" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-md-12">
+                                    <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid" id="output">
+                                </div>
+                            </div>
+                           
+                            <a  href="business_success.html" class="btn btn-login text-white" >Add Business</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!------------Script Files------------>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script type="../text/javascript" src="assets/lib/owl/owl.carousel.min.js"></script>
+    <script type="../text/javascript" src="assets/lib/owl/owl.carousel.js"></script>
+    <script type="../text/javascript" src="assets/lib/owl/owl.js"></script>
+    <script src="../assets/lib/aos/aos.js"></script>
+    <script src="../assets/lib/aos/aso-custom.js"></script>
+    <script>
+     
+    </script>
+
+</body>
+
+</html>

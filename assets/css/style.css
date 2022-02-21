@@ -669,9 +669,43 @@ aside ul li a:hover {
 .product-input {
   height: 3rem;
   background: #ffffff;
-  opacity: 0.3;
-  border: 2px solid #000000;
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
+.upload-file-btn {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: gray;
+  background-color: white;
+  padding: 0px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+ .custom-file-btn input[type=file] {
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  padding: 32px 20px;
+  margin-left: 20px;
+  opacity: 0;
+}
+.upload-text{
+  line-height: 40px;
+  padding-left: 20px;
+  color: #689DED;
+}
+.upload-icon{
+  width: 15%;
+  float: right;
+  height: 45px;
+  color: gray;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  background-color: transparent;
+  color: #00488E;
+
+} 
 .product-textarea {
   height: 8rem;
 }
@@ -817,4 +851,138 @@ background: #689DED;
 border-radius: 6px;
 color: #fff;
 margin-top: 20px;
+}
+/* add business  */
+.aside-business{
+  width: 50%;
+    position: absolute;
+    margin-left: -800px;
+    z-index: 100;
+    top: 0px;
+    background-color: #f8f8f8;
+}
+.business-main-container{
+  width: 36rem;
+  margin: auto;
+}
+.business-add-container{
+  margin-top: 30px;
+}
+.business-form-card{
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  padding: 81px;
+  margin: 3rem auto;
+}
+.business-padding{
+  padding-bottom: 40px;
+}
+.business-add-container h3,h4{
+  font-family: 'Nunito Sans';
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  color: #000000;
+}
+
+.business-add-container h4{
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 18px;
+}
+.business-add-container a{
+    color: #000;
+}
+.business-form-card img{
+   width: 100%;
+   height: 100%;
+}
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none
+}
+
+#msform fieldset .form-card {
+  text-align: left;
+  color: #9E9E9E
+}
+#progressbar{
+  width:100% ;
+  padding: 1px;
+}
+#progressbar li {
+  width: 24%;
+  height: 8px;
+  list-style-type: none;
+  float: left;
+  background: #DADCE0;
+  margin:1px;
+}
+#progressbar  .active-progress {
+ background-color: #689DED;
+}
+.success-bussiness{
+  margin-top: 160px;
+  text-align: center;
+}
+.success-bussiness p{
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 300;
+}
+.success-bussiness a{
+  font-family: 'Roboto';
+  text-align: center;
+  color: #000000;
+  padding-bottom: 100px;
+}
+.user-message{
+  background: #F9F9F9;
+  margin-top: 20px;
+  padding: 1.5rem;
+  line-height: 10px;
+}
+.business-icon{
+  margin-left: 40px;
+  background: #BED3F4;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  color: #fff;
+}
+.business-icon p {
+  font-family: 'Montserrat';
+  padding: 10px 20px 0px 0px;
+  float: left;
+  font-size: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+}
+.icon-color{
+  background: #F8F7F7;
+  border: 1px solid #F0F0F0;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
 }

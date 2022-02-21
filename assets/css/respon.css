@@ -3,16 +3,13 @@
   .main-container {
     width: 100%;
   }
-  aside {
+  aside{
     width: 50%;
     position: absolute;
     margin-left: -500px;
     z-index: 100;
     top: 0px;
     background-color: #f8f8f8;
-  }
-  .aside-show {
-    display: block;
   }
   .show-aside {
     margin-left: 0px;
@@ -115,7 +112,16 @@
   .dashboard-header nav ul li a {
     padding: 0px;
   }
-
+  .business-main-container{
+    width: 100%;
+  }
+  .business-form-card{
+    padding: 20px;
+  }
+  .custom-file-btn input[type=file] {
+    padding: 0px ;
+    margin-left: 0px;
+  }
 }
 @media (max-width: 390px) {
   .form-container {
@@ -155,4 +161,5 @@
     margin-top: -50px;
     font-size: 1rem;
   }
+ 
 }

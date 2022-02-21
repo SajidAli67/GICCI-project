@@ -545,11 +545,15 @@ aside ul li a:hover {
   margin-right: 20px;
 }
 .aside-show {
-  background-color: transparent;
+  /* background-color: transparent; */
   border: none;
   color: #c4c4c4;
   font-size: 2rem;
-  display: none;
+  display: none; 
+}
+.aside-show:hover {
+  transform: scale(0.9);
+ 
 }
 .aside-close {
   background-color: transparent;

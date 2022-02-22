@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Nunito+Sans:ital,wght@0,400;1,300&family=Roboto&family=Rubik:wght@300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&family=Nunito+Sans:ital,wght@0,400;1,300&family=Roboto&family=Rubik:wght@300;500&display=swap');
 body {
   font-family: "Roboto", Times, serif;
   overflow-x: hidden;
@@ -665,6 +665,20 @@ aside ul li a:hover {
   line-height: 120%;
   color: #941b0c;
 }
+.btn-product{
+  font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+width: 200px;
+height: 50px;
+  color: #fff !important;
+background: #689DED;
+padding-top: 10px;
+}
+.btn-product:hover{
+    color: #fff;
+}
 .product-textarea,
 .product-input {
   height: 3rem;
@@ -744,6 +758,10 @@ aside ul li a:hover {
   font-size: 48px;
   line-height: 59px;
   color: #181818;
+}
+.change-logo{
+  border: none;
+  color: #334B71;
 }
 .btn-update {
   background: #e8f0fe;
@@ -852,6 +870,9 @@ border-radius: 6px;
 color: #fff;
 margin-top: 20px;
 }
+.btn-business-view:hover{
+  color: #fff;
+}
 /* add business  */
 .aside-business{
   width: 50%;
@@ -947,7 +968,7 @@ margin-top: 20px;
   font-family: 'Roboto';
   text-align: center;
   color: #000000;
-  padding-bottom: 100px;
+  margin-bottom: 10px;
 }
 .user-message{
   background: #F9F9F9;
@@ -984,5 +1005,48 @@ margin-top: 20px;
   font-size: 18px;
   display: inline-block;
   text-align: center;
-  margin-left: 10px;
+  margin: 10px;
 }
+.status{
+  width: 10px;
+  height: 10px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  margin: 10px 20px;
+}
+.business-detail-city{
+  text-align: left;
+}
+.business-desc-detail{
+  padding-left: 10px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+}
+.btn-business-view-link{
+  width: 138px;
+  height: 37px;
+  background: #689DED;
+  color: #fff !important;
+  float: left;
+  margin-top: 10px;
+}
+.padding-bottom{
+  padding-bottom: 70px;
+}
+.business-carousel-indicators li{
+  border-radius: 0px;
+  width: 20px;
+  height: 5px;
+  background: #FFFFFF;
+  border: 0.5px solid #A0A0A0;
+  box-sizing: border-box;
+}
+.business-carousel-indicators .active{
+  border-radius: 0px;
+  width: 20px;
+  height: 5px;
+  background: #A0A0A0;
+  border: 0.5px solid #A0A0A0;
+  box-sizing: border-box;
+}
+

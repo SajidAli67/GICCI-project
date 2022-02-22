@@ -77,11 +77,6 @@
     width: 200px;
   }
 }
-/* @media (max-width: 655px) {
-  .dashboard-header nav .navbar-brand {
-    position: absolute
-  }
-} */
 @media (max-width: 576px) {
   .form-container {
     width: 23rem;
@@ -131,6 +126,12 @@
     padding: 0px ;
     margin-left: 0px;
   }
+  .icon-color{
+    width: 100%;
+  }
+  .business-icon {
+    float: left;
+  }
 }
 @media (max-width: 430px){
   .login-header nav ul  {
@@ -154,7 +155,7 @@
     font-size: 1.25rem;
 }
   .login-header nav ul {
-    margin-top: -4rem;
+    margin-top: 0rem;
     font-size: 10px;
   }
   .login-header nav ul li a {

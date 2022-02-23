@@ -47,15 +47,15 @@
             <div class="col-sm-12 col-xs-12  col-md-6 col-lg-6 col-xl-6">
                 <div class="form-container">
                     <h1 class="form-header">Login</h1>
-                    <form>
+                    <form id="login-form" method="post" action="#">
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <label for="name">Email Address<span class="text-required">*</span></label>
-                                <input type="text" class="form-control custom-input" id="name">
+                                <label for="email">Email Address<span class="text-required">*</span></label>
+                                <input type="email" class="form-control custom-input" id="email" name="email" required>
                             </div>
                             <div class="form-group col-md-12">
-                                <label for="email">Password<span class="text-required">*</span></label>
-                                <input type="text" class="form-control custom-input" id="email">
+                                <label for="password">Password<span class="text-required">*</span></label>
+                                <input type="password" class="form-control custom-input" id="password" name="password" required>
                             </div>
                         </div>
                          <a href="#" class="forget_pws float-right">Forgot password?</a>
@@ -82,12 +82,35 @@
     <!------------Script Files------------>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/lib/jquery.validate.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/lib/owl/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/lib/owl/owl.carousel.js"></script>
     <script type="text/javascript" src="assets/lib/owl/owl.js"></script>
     <script src="assets/lib/aos/aos.js"></script>
     <script src="assets/lib/aos/aso-custom.js"></script>
+    <script>
+       var x = $('#login-form').validate({
+        errorElement: "em",
+				errorPlacement: function ( error, element ) {
+					// Add the `help-block` class to the error element
+					error.addClass( "help-block" );
+
+					if ( element.prop( "type" ) === "checkbox" ) {
+						error.insertAfter( element.parent( "label" ) );
+					} else {
+						error.insertAfter( element );
+					}
+				},
+				highlight: function ( element, errorClass, validClass ) {
+					$( element).addClass( "error" ).removeClass( "success" );
+				},
+				unhighlight: function (element, errorClass, validClass) {
+					$( element ).addClass( "success" ).removeClass( "error" );
+				}
+       })
+    </script>
+
 
 </body>
 

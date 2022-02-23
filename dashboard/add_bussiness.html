@@ -13,9 +13,12 @@
     <link rel="stylesheet" type="text/css" href="../assets/lib/owl/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/lib/owl/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="../assets/lib/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="./multi-form.css?v2">
+    
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Nunito+Sans:ital,wght@0,400;1,300&family=Roboto&display=swap"
         rel="stylesheet">
+        
 </head>
 
 
@@ -65,57 +68,57 @@
         </ul>
     </aside>
     <div class="business-main-container">
+       
         <div class="container">
             <div class="business-add-container">
                 <h3>Add your business</h3>
-                <form id="msform">
-                    <!-- progressbar -->
+                <form id="myForm" action="#" method="POST">
                     <ul id="progressbar" class="progressbar">
                         <li class="active-progress"></li>
                         <li></li>
                         <li></li>
                         <li></li>
-                    </ul> <!-- fieldsets -->
-                    <fieldset>
+                    </ul>
+                    <!-- One "tab" for each step in the form: -->
+                    <div class="tab">
                         <div class="business-form-card">
-                            <h3 class="business-padding">Tell us a little bit about your business?</h3>
-                            <div class="row">
-                                <div class="form-group col-md-12">
-                                    <label for="name">Product name</label>
-                                    <input type="text" class="form-control  product-input" id="name">
-                                </div>
+                        <h3 class="business-padding">Tell us a little bit about your business?</h3>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="name">Product name</label>
+                                <input type="text" class="form-control  product-input" id="product_name" name="product_name" required>
                             </div>
-                            <div class="row">
-                                <div class="form-group col-md-12">
-                                    <label for="category">Select a category</label>
-                                    <input type="text" class="form-control  product-input" id="category">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col-md-12">
-                                    <label for="category">Select a category</label>
-                                    <input type="text" class="form-control  product-input" id="category">
-                                </div>
-                            </div>
-                            <h4>By continue you will agree to the our privacy policy, <a href="#">terms of services and
-                                    condations.</a></h4>
-                            <input type="button"class="next btn btn-login" value="Next" id="next" />
                         </div>
-                    </fieldset>
-                    
-                    <fieldset>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="category">Select a category</label>
+                                <input type="text" class="form-control  product-input" id="cateogry" name="cateogry" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label for="sub_category">Sub  category</label>
+                                <input type="text" class="form-control  product-input" id="sub_category" class="sub_category" required>
+                            </div>
+                        </div>
+                        <h4>By continue you will agree to the our privacy policy, <a href="#">terms of services and
+                                condations.</a></h4>
+                        <input type="button"class="next btn btn-login" value="Next" id="setpOne" />
+                        </div>
+                    </div>
+                    <div class="tab">
                         <div class="business-form-card">
                             <h3 class="business-padding">Where is your business located?</h3>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="country">Country </label>
-                                    <input type="text" class="form-control  product-input" id="country">
+                                    <input type="text" class="form-control  product-input" id="country" name="country" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="state">State</label>
-                                    <select class="form-control product-input">
+                                    <select class="form-control product-input" name="state" required>
                                         <option>State</option>
                                         <option>State</option>
                                         <option>State</option>
@@ -126,65 +129,61 @@
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="city">City</label>
-                                    <input type="text" class="form-control  product-input" id="city">
+                                    <input type="text" class="form-control  product-input" id="city" name="city" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="street">Street address</label>
-                                    <input type="text" class="form-control  product-input" id="street">
+                                    <input type="text" class="form-control  product-input" id="street" name="street" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="pin_code">Pin Code</label>
-                                    <input type="text" class="form-control  product-input" id="pin_code">
+                                    <input type="text" class="form-control  product-input" id="pin_code" name="pin_code" required>
                                 </div>
                             </div>
                             <input type="button"class="next btn btn-login" value="Next" id="next" />
                         </div>
-                    </fieldset>
-
-
-                    <fieldset>
+                     </div>   
+                    <div class="tab">
                         <div class="business-form-card">
                             <h3 class="business-padding">How to connect with your bussiness?</h3>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="email">Business email </label>
-                                    <input type="text" class="form-control  product-input" id="email">
+                                    <input type="email" class="form-control  product-input" id="email" name="business_email"  required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="phone">Business phone</label>
-                                    <input type="text" class="form-control  product-input" id="phone">
+                                    <input type="text" class="form-control  product-input" id="phone" name="business_phone" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="city">City</label>
-                                    <input type="text" class="form-control  product-input" id="city">
+                                    <input type="text" class="form-control  product-input" id="city" name="business_city" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="street">Website</label>
-                                    <input type="text" class="form-control  product-input" id="street">
+                                    <input type="text" class="form-control  product-input" id="street" name="business_street" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="pin_code">Pin Code</label>
-                                    <input type="text" class="form-control  product-input" id="pin_code">
+                                    <input type="number" class="form-control  product-input" id="pin_code" name="business_pin_code" required>
                                 </div>
                             </div>
                             <input type="button"class="next btn btn-login" value="Next" id="next" />
                         </div>
-                    </fieldset>
-
-
-                    <fieldset>
+                    </div>
+                    <div class="tab">
                         <div class="business-form-card">
                             <h3 class="business-padding">Upload Logo of your business</h3>
                             <div class="row">
@@ -192,7 +191,7 @@
                                     <div class="custom-file-btn">
                                         <label for="">Upload Image</label>
                                         <label class="upload-file-btn"><span class="upload-text">Click to browse file</span><i class="fas fa-ellipsis-h upload-icon"></i></label>
-                                        <input type="file" name="" accept="image/*" onchange="loadFile(event)" >
+                                        <input type="file" name="" accept="image/*" onchange="loadFile(event)" accept="image/*" required>
                                     </div>
                                 </div>
                             </div>
@@ -203,22 +202,58 @@
                             </div>
                             <a  href="business_success.html" class="btn btn-login text-white" >Add Business</a>
                         </div>
-                    </fieldset>
+                    </div>
                 </form>
             </div>
+            
         </div>
     </div>
     <!------------Script Files------------>
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/lib/jquery.validate.js"></script>
     <script src="../assets/js/main.js"></script>
     <script type="../text/javascript" src="assets/lib/owl/owl.carousel.min.js"></script>
     <script type="../text/javascript" src="assets/lib/owl/owl.carousel.js"></script>
     <script type="../text/javascript" src="assets/lib/owl/owl.js"></script>
     <script src="../assets/lib/aos/aos.js"></script>
     <script src="../assets/lib/aos/aso-custom.js"></script>
-    <script>
-     
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var val	=	{
+                // Specify validation rules
+                rules: {
+                 
+                },
+                errorElement: "em",
+				errorPlacement: function ( error, element ) {
+					error.addClass( "help-block" );
+
+					if ( element.prop( "type" ) === "checkbox" ) {
+						error.insertAfter( element.parent( "label" ) );
+					} else {
+						error.insertAfter( element );
+					}
+				},
+				highlight: function ( element, errorClass, validClass ) {
+					$( element).addClass( "error" ).removeClass( "success" );
+				},
+				unhighlight: function (element, errorClass, validClass) {
+					$( element ).addClass( "success" ).removeClass( "error" );
+				}
+            }
+            $("#myForm").multiStepForm(
+            {
+                // defaultStep:0,
+                beforeSubmit : function(form, submit){
+                    console.log("called before submiting the form");
+                    console.log(form);
+                    console.log(submit);
+                },
+                validations:val,
+            }
+            ).navigateTo(0);
+        });
     </script>
 
 </body>

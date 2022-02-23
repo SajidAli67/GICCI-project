@@ -74,15 +74,22 @@
               <div class="col-md-6">
                 <div class="business-icon">
                     <i class="fas fa-globe"></i>
-                    <p>Web</p>
+                    <div class="business-icon-text">
+                      <strong>  Web</strong>
+                    </div>
+                    
                   </div>
                   <div class="business-icon">
                     <i class="fas fa-envelope"></i>
-                    <p>Email</p>
+                    <div class="business-icon-text">
+                        <strong>  Email</strong>
+                    </div>
                   </div>
                   <div class="business-icon" >
                     <i class="fas fa-phone-alt"></i>
-                    <p>Call</p>
+                    <div class="business-icon-text">
+                        <strong>  Phone</strong>
+                    </div>
                   </div> 
                   
 
@@ -426,9 +433,14 @@
     <!------------Script Files------------>
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="../assets/js/main.js"></script>
  
-
+    <script>
+        $('.business-icon').hover(function(){
+            
+        })
+    </script>
 </body>
 
 </html>

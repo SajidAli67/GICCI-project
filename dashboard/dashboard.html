@@ -56,7 +56,12 @@
 </aside>
 <div class="main-container">
     <div class="container-fluid">
-        <input type="text " class="form-control dashboard-serach" placeholder="Search bussiness by name, location or service">
+        <div class="input-group search-input-group">
+            <input type="email" id="search" class="form-control dashboard-serach" placeholder="Search bussiness by name, location or service">
+            <span class="input-group-btn">
+                <button class="btn btn-search-close" id="Search_reset" type="submit"><i class="fas fa-times"></i></button>
+            </span>
+        </div>
         <div class="row mt-4">
             <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="custom-card">
@@ -188,6 +193,11 @@
     <script type="../text/javascript" src="assets/lib/owl/owl.js"></script>
     <script src="../assets/lib/aos/aos.js"></script>
     <script src="../assets/lib/aos/aso-custom.js"></script>
+    <Script>
+        $('#Search_reset').click(function(){
+            $('#search').val('');
+        })
+    </Script>
 
 </body>
 

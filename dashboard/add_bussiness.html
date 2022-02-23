@@ -13,7 +13,8 @@
     <link rel="stylesheet" type="text/css" href="../assets/lib/owl/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/lib/owl/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="../assets/lib/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="./multi-form.css?v2">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Nunito+Sans:ital,wght@0,400;1,300&family=Roboto&display=swap"
@@ -68,7 +69,7 @@
         </ul>
     </aside>
     <div class="business-main-container">
-       
+        
         <div class="container">
             <div class="business-add-container">
                 <h3>Add your business</h3>
@@ -92,7 +93,14 @@
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <label for="category">Select a category</label>
-                                <input type="text" class="form-control  product-input" id="cateogry" name="cateogry" required>
+                                <select class="js-example-basic-single form-control  product-input" id="cateogry" name="cateogry" required>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                  </select>
+                                <!-- <input type="text" class="form-control  product-input" id="cateogry" name="cateogry" required> -->
                             </div>
                         </div>
                         <div class="row">
@@ -118,7 +126,7 @@
                             <div class="row">
                                 <div class="form-group col-md-12">
                                     <label for="state">State</label>
-                                    <select class="form-control product-input" name="state" required>
+                                    <select class="js-example-basic-single form-control  product-input"  name="state" required>
                                         <option>State</option>
                                         <option>State</option>
                                         <option>State</option>
@@ -211,6 +219,7 @@
     <!------------Script Files------------>
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="../assets/lib/jquery.validate.js"></script>
     <script src="../assets/js/main.js"></script>
     <script type="../text/javascript" src="assets/lib/owl/owl.carousel.min.js"></script>
@@ -219,6 +228,11 @@
     <script src="../assets/lib/aos/aos.js"></script>
     <script src="../assets/lib/aos/aso-custom.js"></script>
     <script type="text/javascript">
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2({
+                width: 'style'
+            });
+    });
         $(document).ready(function(){
             var val	=	{
                 // Specify validation rules

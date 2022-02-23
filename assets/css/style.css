@@ -523,7 +523,6 @@ aside .btn-color,
 .btn-updete:hover,.btn-color:hover {
   box-shadow: 0px 50px 0 0px #176be9 inset , 0px -50px 0 0px #176be9 inset; 
   color: #fff;
-  font-size:20px;
   transition:all 1s;
 
 }
@@ -823,6 +822,12 @@ transition:all 1s;
   background-color: #689ded;
   color: #fff;
 }
+.btn-social:hover {
+  box-shadow: 0px 50px 0 0px #176be9 inset , 0px -50px 0 0px #176be9 inset; 
+  color: #fff;
+  transition:all 1s;
+}
+
 .business-update-header {
   font-family: "Montserrat";
   font-style: normal;

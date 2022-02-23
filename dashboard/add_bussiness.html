@@ -30,7 +30,7 @@
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
                 <button class="aside-show" id="aside-show" style="display:block"><i class="fas fa-bars"></i></button>
-                <h2 class="navbar-brand">GICTORY</h2>
+                <h2 class="navbar-brand"><a href="dashboard.html">GICTORY</a></h2>
                 <ul class=" ml-auto">
                     <li><a class="nav-link nav-active" href="dashboard.html">Shri Shri User Panwar</a> </li>
                     <li><a class="nav-link" href="dashboard.html"><img src="../assets/imges/profile_img.png" alt="GICCI"
@@ -75,13 +75,13 @@
                 <h3>Add your business</h3>
                 <form id="myForm" action="#" method="POST">
                     <ul id="progressbar" class="progressbar">
-                        <li class="active-progress"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li class="active-progress" id="step1"></li>
+                        <li id="step2"></li>
+                        <li id="step3"></li>
+                        <li id="step4"></li>
                     </ul>
                     <!-- One "tab" for each step in the form: -->
-                    <div class="tab">
+                    <div class="tab" id="tab1">
                         <div class="business-form-card">
                         <h3 class="business-padding">Tell us a little bit about your business?</h3>
                         <div class="row">
@@ -114,7 +114,7 @@
                         <input type="button"class="next btn btn-login" value="Next" id="setpOne" />
                         </div>
                     </div>
-                    <div class="tab">
+                    <div class="tab" id="tab2">
                         <div class="business-form-card">
                             <h3 class="business-padding">Where is your business located?</h3>
                             <div class="row">
@@ -155,7 +155,7 @@
                             <input type="button"class="next btn btn-login" value="Next" id="next" />
                         </div>
                      </div>   
-                    <div class="tab">
+                    <div class="tab" id="tab3">
                         <div class="business-form-card">
                             <h3 class="business-padding">How to connect with your bussiness?</h3>
                             <div class="row">
@@ -191,7 +191,7 @@
                             <input type="button"class="next btn btn-login" value="Next" id="next" />
                         </div>
                     </div>
-                    <div class="tab">
+                    <div class="tab" id="tab4">
                         <div class="business-form-card">
                             <h3 class="business-padding">Upload Logo of your business</h3>
                             <div class="row">
@@ -231,7 +231,8 @@
         $(document).ready(function() {
             $('.js-example-basic-single').select2({
                 width: 'style'
-            });
+            }); 
+           
     });
         $(document).ready(function(){
             var val	=	{
@@ -268,6 +269,20 @@
             }
             ).navigateTo(0);
         });
+
+        $('#step1').click(function(){
+                
+                $(this).addClass('active-progress')
+                $('#tab1').addClass('current');
+                $('#tab2').removeClass('current');
+                $('#tab3').removeClass('current');
+                $('#tab4').removeClass('current');
+                $('#step2').removeClass('active-progress');
+                $('#step3').removeClass('active-progress');
+                $('#step4').removeClass('active-progress');
+            })
+
+            
     </script>
 
 </body>

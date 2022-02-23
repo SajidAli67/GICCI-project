@@ -24,6 +24,7 @@ $(document).ready(function(){
         /*Mark the current section with the class 'current'*/
         tabs.removeClass('current').eq(i).addClass('current');
         // Show only the navigation buttons that make sense for the current section:
+        
          form.find('.previous').toggle(i > 0);
          atTheEnd = i >= tabs.length - 1;
         form.find('.next').toggle(!atTheEnd);
@@ -45,6 +46,81 @@ $(document).ready(function(){
       form.find('.previous').click(function() {
         form.navigateTo(curIndex() - 1);
       });
+    // form.find('li').click(function() {
+    //   if('validations' in args && typeof args.validations === 'object' && !$.isArray(args.validations)){
+    //     if(!('noValidate' in args) || (typeof args.noValidate === 'boolean' && !args.noValidate)){
+    //       form.validate(args.validations);
+    //       if(form.valid() == true){
+    //         form.navigateTo(curIndex() + 1);
+    //         return true;
+            
+    //       }
+    //       return false;
+    //     }
+    //   }
+    //   form.navigateTo(curIndex() + 1);
+    // });
+
+      // STep 2
+    $('#step2').click(function(){
+      if('validations' in args && typeof args.validations === 'object' && !$.isArray(args.validations)){
+        if(!('noValidate' in args) || (typeof args.noValidate === 'boolean' && !args.noValidate)){
+          form.validate(args.validations);
+          if(form.valid() == true){
+            $('#step2').addClass('active-progress')
+             $('#tab1').removeClass('current')
+             $('#tab2').addClass('current')
+             $('#tab3').removeClass('current')
+             $('#tab4').removeClass('current')
+             $('#step3').removeClass('active-progress');
+             $('#step4').removeClass('active-progress');
+            return true;
+            
+          }
+          return false;
+        }
+      }
+    })
+
+     // STep 3
+     $('#step3').click(function(){
+      if('validations' in args && typeof args.validations === 'object' && !$.isArray(args.validations)){
+        if(!('noValidate' in args) || (typeof args.noValidate === 'boolean' && !args.noValidate)){
+          form.validate(args.validations);
+          if(form.valid() == true){
+             $('#step3').addClass('active-progress')
+             $('#tab3').addClass('current')
+             $('#tab1').removeClass('current')
+             $('#tab2').removeClass('current')
+             $('#tab4').removeClass('current')
+             $('#step4').removeClass('active-progress');
+            return true;
+            
+          }
+          return false;
+        }
+      }
+    })
+
+     // STep 4
+     $('#step4').click(function(){
+      if('validations' in args && typeof args.validations === 'object' && !$.isArray(args.validations)){
+        if(!('noValidate' in args) || (typeof args.noValidate === 'boolean' && !args.noValidate)){
+          form.validate(args.validations);
+          if(form.valid() == true){
+             $('#step4').addClass('active-progress')
+             $('#tab4').addClass('current')
+             $('#tab1').removeClass('current')
+             $('#tab2').removeClass('current')
+             $('#tab3').removeClass('current')
+            return true;
+            
+          }
+          return false;
+        }
+      }
+    })
+
 
       /* Next button goes forward iff current block validates */
       form.find('.next').click(function() {
@@ -54,6 +130,7 @@ $(document).ready(function(){
             if(form.valid() == true){
               form.navigateTo(curIndex() + 1);
               return true;
+              
             }
             return false;
           }

@@ -25,17 +25,17 @@
         <div class="container-fluid">
             <button class="aside-show" id="aside-show"><i class="fas fa-bars"></i></button>
             <h2 class="navbar-brand"><a href="dashboard.html">GICTORY</a></h2>
-                <ul class=" ml-auto">
-                    <li><a class="nav-link nav-active" href="dashboard.html">Shri Shri User Panwar</a> </li>
-                    <li><a class="nav-link" href="dashboard.html"><img src="../assets/imges/profile_img.png" alt="GICCI" class="img-fluid"> </a> </li>
-                    <div class="dropdown show dropdown-icon">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        </a>
-                        <div class="dropdown-menu top-dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="profile.html">My profile</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Logout</a>
-                        </div>
+                <ul class="ml-auto">
+                    <div class="dropdown">
+                        Shri Shri User Panwar
+                      <a class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../assets/imges/profile_img.png" alt="GICCI" class="img-fluid">
+                      </a>
+                      <div class="dropdown-menu text-center shiftright" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="profile.html">My profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </div>
                     </div>
                 </ul>
         </div>
@@ -58,41 +58,48 @@
 </aside>
 <div class="main-container">
     <div class="container-fluid">
-        <div class="dashboard-top-heading">
+        <div class="dashboard-top-heading mt-5">
           <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="../assets/imges/bussiness_img.png" alt="GICCI" class="img-fluid">
+              <div class="col-xs-12 col-sm-6 ">
+                <div class="row no-gutters">
+                    <div class="col-xm-12 col-sm-3 ">
+                        <img src="../assets/imges/bussiness_detail_img.png" alt="GICCI" class="img-fluid business-detial-img">
                     </div>
-                    <div class="col-9">
-                        <h1>Softles Web Solutions</h1>
+                    <div class="col-xm-12 col-sm-9  pl-3">
+                        <h1 class="business-detail-padding">Softles Web Solutions</h1>
                         <p>Category, Sub Category <br>New Delhi, India</p>
                     </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-xs-12 col-sm-6 mt-4">
+                
                 <div class="business-icon">
-                    <i class="fas fa-globe"></i>
-                    <div class="business-icon-text">
-                      <strong>  Web</strong>
-                    </div>
-                    
+                    <a  href='#' data-toggle="popover" data-content="www.gicci.com" data-trigger="hover"  data-placement="bottom" >
+                        <i class="fas fa-globe"></i>
+                        <div class="business-icon-text">
+                        <strong>  Web</strong>
+                        </div>
+                     </a>
                   </div>
                   <div class="business-icon">
-                    <i class="fas fa-envelope"></i>
-                    <div class="business-icon-text">
-                        <strong>  Email</strong>
-                    </div>
+                    <a  href='#' data-toggle="popover" data-content="info@gicci.com" data-trigger="hover" data-placement="bottom" >
+                        <i class="fas fa-envelope"></i>
+                        <div class="business-icon-text">
+                            <strong>  Email</strong>
+                        </div>
+                     </a>
                   </div>
-                  <div class="business-icon" >
-                    <i class="fas fa-phone-alt"></i>
-                    <div class="business-icon-text">
-                        <strong>  Phone</strong>
-                    </div>
-                  </div> 
+                
                   
-
+                    <div class="business-icon" >
+                        <a  href='#' data-toggle="popover" data-content="00000000000" data-trigger="hover" data-placement="bottom" >
+                        <i class="fas fa-phone-alt"></i>
+                            <div class="business-icon-text">
+                                <strong>  Phone</strong>
+                            </div>
+                         </a>
+                    </div> 
+                
               </div>
           </div>
             <div class="border-bottom"></div>
@@ -120,239 +127,121 @@
            
           </div> 
             <h3 class="social-title mt-4">Services / Product</h3>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators business-carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="owl-container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-top-img">
+                            <img src="../assets/imges/product_img/p9.jpg" alt="GICCI" class="img-fluid ">
                         </div>
-
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                Web Devlopment
                             </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <p class="card-text">About the product will be shown here.</p>
+                            <p class="card-price">1200 ₹</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
+                </div>
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-top-img">
+                            <img src="../assets/imges/product_img/p6.jpg" alt="GICCI" class="img-fluid ">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                Web Devlopment
                             </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
+                            <p class="card-text">About the product will be shown here.</p>
+                            <p class="card-price">1200 ₹</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-top-img">
+                            <img src="../assets/imges/product_img/p2.jpg" alt="GICCI" class="img-fluid ">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                Web Devlopment
                             </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
+                            <p class="card-text">About the product will be shown here.</p>
+                            <p class="card-price">1200 ₹</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-top-img">
+                            <img src="../assets/imges/product_img/p8.jpg" alt="GICCI" class="img-fluid ">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                Web Devlopment
                             </div>
-
-                            <div class="col-sm-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                <div class="card product-card">
-                                    <div class="card-top-img">
-                                        <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid ">
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">
-                                            Web Devlopment
-                                        </div>
-                                        <p class="card-text">About the product will be shown here.</p>
-                                        <p class="card-price">1200 ₹</p>
-                                    </div>
-                                </div>
+                            <p class="card-text">About the product will be shown here.</p>
+                            <p class="card-price">1200 ₹</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card product-card">
+                        <div class="card-top-img">
+                            <img src="../assets/imges/product_img/p3.jpg" alt="GICCI" class="img-fluid ">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                Web Devlopment
                             </div>
+                            <p class="card-text">About the product will be shown here.</p>
+                            <p class="card-price">1200 ₹</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+        </div>
             <h3 class="social-title mt-5">Connect on Social Media</h3>
-            <div class="row no-gutters">
+            <div class="row ">
                 <div class="col-sm-4 col-xm-12 col-md-4 col-lg-2 col-xl-2">
                     <div class="icon-color">
-                        <div class="row ">
-                            <div class="col-3"><img src="../assets/imges/facebook.png" alt=""></div>
-                            <div class="col-9">Facebook</div>
+                        <a href="#">
+                            <div class="row ">
+                            <div class="col-2"><img src="../assets/imges/facebook.png" alt="" class=""></div>
+                            <div class="col-8 ml-2">Facebook</div>
                         </div>
+                        </a>
+                        
                     </div>
                 </div>
                 <div class="col-sm-4 col-xm-12 col-md-4 col-lg-2 col-xl-2">
                     <div class="icon-color">
-                        <div class="row">
-                            <div class="col-3"><img src="../assets/imges/twitter.png" alt=""></div>
-                            <div class="col-9">Twitter</div>
+                        <a href="#">
+                            <div class="row ">
+                            <div class="col-2"><img src="../assets/imges/twitter.png" alt="" class=""></div>
+                            <div class="col-5 ml-2">Twitter</div>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-sm-4 col-xm-12 col-md-4 col-lg-2 col-xl-2">
                     <div class="icon-color">
-                        <div class="row">
-                            <div class="col-3"><img src="../assets/imges/whatsapp.png" alt=""></div>
-                            <div class="col-9">Whatsapp</div>
+                        <a href="#">
+                            <div class="row ">
+                            <div class="col-2"><img src="../assets/imges/whatsapp.png" alt="" class=""></div>
+                            <div class="col-5 ml-2">Whatsapp</div>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-sm-4 col-xm-12 col-md-4 col-lg-2 col-xl-2">
                     <div class="icon-color">
-                        <div class="row">
-                            <div class="col-3"><img src="../assets/imges/linkedin.png" alt=""></div>
-                            <div class="col-9">Linkdin</div>
+                        <a href="#">
+                            <div class="row ">
+                            <div class="col-2"><img src="../assets/imges/linkedin.png" alt="" class=""></div>
+                            <div class="col-5 ml-2">Linkdin</div>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -361,7 +250,7 @@
             <h3 class="social-title mt-5">Simillar Business</h3>
             <div class="row no-gutters padding-bottom">
                 <div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="icon-color">
+                    <div class="simple-business">
                         <div class="row ">
                             <div class="col-3"><img src="../assets/imges/bussiness_img.png" alt=""></div>
                             <div class="col-9">Softles Web Solutions
@@ -377,13 +266,13 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <a class="btn btn-business-view-link">View Business</a>
+                                <a class="btn btn-primary btn-business-view-link">View Business</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xm-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                    <div class="icon-color">
+                    <div class="simple-business">
                         <div class="row ">
                             <div class="col-3"><img src="../assets/imges/bussiness_img.png" alt=""></div>
                             <div class="col-9">Softles Web Solutions
@@ -399,14 +288,14 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <a class="btn btn-business-view-link">View Business</a>
+                                <a class="btn btn-primary btn-business-view-link">View Business</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xm-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="icon-color">
+                    <div class="simple-business">
                         <div class="row ">
                             <div class="col-3"><img src="../assets/imges/bussiness_img.png" alt=""></div>
                             <div class="col-9">Softles Web Solutions
@@ -422,7 +311,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <a class="btn btn-business-view-link">View Business</a>
+                                <a class="btn btn-primary btn-business-view-link">View Business</a>
                             </div>
                         </div>
                     </div>
@@ -432,15 +321,17 @@
 </div>
     <!------------Script Files------------>
     <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/lib/owl/owl.carousel.min.js"></script>
+    <script src="../assets/lib/owl/owl.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="../assets/js/main.js"></script>
- 
     <script>
-        $('.business-icon').hover(function(){
-            
-        })
+        $(function () {
+  $('[data-toggle="popover"]').popover()
+})
     </script>
+
 </body>
 
 </html>

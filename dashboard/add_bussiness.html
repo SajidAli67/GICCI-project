@@ -29,23 +29,21 @@
         <!-- Nav Start  -->
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <button class="aside-show" id="aside-show" style="display:block"><i class="fas fa-bars"></i></button>
+                <button class="aside-show" id="aside-show"><i class="fas fa-bars"></i></button>
                 <h2 class="navbar-brand"><a href="dashboard.html">GICTORY</a></h2>
-                <ul class=" ml-auto">
-                    <li><a class="nav-link nav-active" href="dashboard.html">Shri Shri User Panwar</a> </li>
-                    <li><a class="nav-link" href="dashboard.html"><img src="../assets/imges/profile_img.png" alt="GICCI"
-                                class="img-fluid"> </a> </li>
-                    <div class="dropdown show dropdown-icon">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                        </a>
-                        <div class="dropdown-menu top-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <ul class="ml-auto">
+                        <div class="dropdown">
+                            Shri Shri User Panwar
+                          <a class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../assets/imges/profile_img.png" alt="GICCI" class="img-fluid">
+                          </a>
+                          <div class="dropdown-menu text-center shiftright" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="profile.html">My profile</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Logout</a>
+                          </div>
                         </div>
-                    </div>
-                </ul>
+                    </ul>
             </div>
         </nav>
         <!-- Nav End  -->
@@ -93,25 +91,61 @@
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <label for="category">Select a category</label>
-                                <select class="js-example-basic-single form-control  product-input" id="cateogry" name="cateogry" required>
-                                    <option value="AL">Alabama</option>
-                                    <option value="AL">Alabama</option>
-                                    <option value="AL">Alabama</option>
-                                    <option value="AL">Alabama</option>
-                                    <option value="WY">Wyoming</option>
+                                <select class="js-example-basic-single form-control  product-input" id="category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="cat1">Category1</option>
+                                    <option value="cat2">Category2</option>
+                                    <option value="cat3">Category3</option>
+                                    <option value="cat4">Category4</option>
+                                    <option value="cat5">Category5</option>
                                   </select>
-                                <!-- <input type="text" class="form-control  product-input" id="cateogry" name="cateogry" required> -->
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-12">
+                             
                                 <label for="sub_category">Sub  category</label>
-                                <input type="text" class="form-control  product-input" id="sub_category" class="sub_category" required>
+                                <select class="js-example-basic-single form-control  product-input" name="sub_category" id="sub_category" required>
+                                    <optgroup label="cat1">
+                                        <option value="AL">Sub Category1</option>
+                                        <option value="AL">Sub Category1</option>
+                                        <option value="AL">Sub Category1</option>
+                                        <option value="WY">Sub Category1</option>
+                                      </optgroup>
+                                      <optgroup label="cat2">
+                                        <option value="AL">Sub Category2</option>
+                                        <option value="AL">Sub Category2</option>
+                                        <option value="AL">Sub Category2</option>
+                                        <option value="AL">Sub Category2</option>
+                                        <option value="WY">Sub Category2</option>
+                                      </optgroup>
+                                      <optgroup label="cat3">
+                                        <option value="AL">Sub Category3</option>
+                                        <option value="AL">Sub Category3</option>
+                                        <option value="AL">Sub Category3</option>
+                                        <option value="AL">Sub Category3</option>
+                                        <option value="WY">Sub Category3</option>
+                                      </optgroup>
+                                      <optgroup label="cat4">
+                                        <option value="AL">Sub Category4</option>
+                                        <option value="AL">Sub Category4</option>
+                                        <option value="AL">Sub Category4</option>
+                                        <option value="AL">Sub Category4</option>
+                                        <option value="WY">Sub Category4</option>
+                                      </optgroup>
+                                      <optgroup label="cat5">
+                                        <option value="AL">Sub Category5</option>
+                                        <option value="AL">Sub Category5</option>
+                                        <option value="AL">Sub Category5</option>
+                                        <option value="AL">Sub Category5</option>
+                                        <option value="WY">Sub Category5</option>
+                                      </optgroup>
+                                  </select>
                             </div>
                         </div>
                         <h4>By continue you will agree to the our privacy policy, <a href="#">terms of services and
                                 condations.</a></h4>
-                        <input type="button"class="next btn btn-login" value="Next" id="setpOne" />
+                        <input type="button"class="next btn btn-primary  btn-block btn-lg btn-login" value="Next" id="setpOne" />
                         </div>
                     </div>
                     <div class="tab" id="tab2">
@@ -152,7 +186,7 @@
                                     <input type="text" class="form-control  product-input" id="pin_code" name="pin_code" required>
                                 </div>
                             </div>
-                            <input type="button"class="next btn btn-login" value="Next" id="next" />
+                            <input type="button"class="next btn btn btn-primary  btn-block btn-lg btn-login" value="Next" id="next" />
                         </div>
                      </div>   
                     <div class="tab" id="tab3">
@@ -188,7 +222,7 @@
                                     <input type="number" class="form-control  product-input" id="pin_code" name="business_pin_code" required>
                                 </div>
                             </div>
-                            <input type="button"class="next btn btn-login" value="Next" id="next" />
+                            <input type="button"class="next btn btn-primary  btn-block btn-lg btn-login" value="Next" id="next" />
                         </div>
                     </div>
                     <div class="tab" id="tab4">
@@ -208,7 +242,7 @@
                                     <img src="../assets/imges/product_img.png" alt="GICCI" class="img-fluid" id="output">
                                 </div>
                             </div>
-                            <a  href="business_success.html" class="btn btn-login text-white" >Add Business</a>
+                            <a  href="business_success.html" class="btn btn btn-primary  btn-block btn-lg btn-login text-white" >Add Business</a>
                         </div>
                     </div>
                 </form>
@@ -281,8 +315,11 @@
                 $('#step3').removeClass('active-progress');
                 $('#step4').removeClass('active-progress');
             })
-
-            
+            var $optgroups = $('#sub_category > optgroup'); 
+            $("#category").on("change",function(){
+                var selectedVal = this.value;
+                $('#sub_category').html($optgroups.filter('[label="'+selectedVal+'"]'));
+            });  
     </script>
 
 </body>

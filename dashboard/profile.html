@@ -25,17 +25,17 @@
         <div class="container-fluid">
             <button class="aside-show" id="aside-show"><i class="fas fa-bars"></i></button>
             <h2 class="navbar-brand"><a href="dashboard.html">GICTORY</a></h2>
-                <ul class=" ml-auto">
-                    <li><a class="nav-link nav-active" href="dashboard.html">Shri Shri User Panwar</a> </li>
-                    <li><a class="nav-link" href="dashboard.html"><img src="../assets/imges/profile_img.png" alt="GICCI" class="img-fluid"> </a> </li>
-                    <div class="dropdown show dropdown-icon">
-                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        </a>
-                        <div class="dropdown-menu top-dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item" href="profile.html">My profile</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Logout</a>
-                        </div>
+                <ul class="ml-auto">
+                    <div class="dropdown">
+                        Shri Shri User Panwar
+                      <a class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../assets/imges/profile_img.png" alt="GICCI" class="img-fluid">
+                      </a>
+                      <div class="dropdown-menu text-center shiftright" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="profile.html">My profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </div>
                     </div>
                 </ul>
         </div>
@@ -64,9 +64,9 @@
                 <div class="profile-info">
                   
                     <div class="row">
-                        <div class="col-sm-12 col-md-3 col-lg-3 order-md-3 ">  <a href="#" class="profile_edit">Edit</a></div>
-                        <div class="col-sm-12 col-md-4 col-lg-3 order-md-1 "><img src="../assets/imges/profile_info.png" alt="GICCI" class="img-fluid"></div>
-                        <div class="col-sm-12 col-md-5 col-lg-3 order-md-2">
+                        <div class="col-sm-12 col-md-2 col-lg-2 order-md-3 ">  <a href="#" class="profile_edit">Edit</a></div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 order-md-1 "><img src="../assets/imges/profile_info.png" alt="GICCI" class="img-fluid"></div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 order-md-2">
                             <p>Shakti Singh Chauhan</p>
                             <p>sktipwr@gmail.com</p>
                             <p>+91 9540494104</p>
@@ -78,14 +78,15 @@
                 </div>
                 <h3 class="social-title pt-3"> Business</h3>
                 <p>You don’t own any business.</p>
-                <a href="#" class="btn add-business">Add your business</a>
+                <a href="add_bussiness.html" class="btn add-business">Add your business</a>
                 <h3 class="social-title pt-3"> Security</h3>
                 <div class="password-change">
                     <div id="accordion">
                         <div class="card">
                             <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#password">
+                                <a class="card-link" data-toggle="collapse" href="#password" id="pws-button">
                                     Change your password
+                                    <span class="float-right psw-icon"><i class="fas fa-caret-down"></i></span>
                                 </a>
                             </div>
                             <div id="password" class="collapse" data-parent="#accordion">
@@ -116,6 +117,7 @@
                             <div class="card-header">
                                 <a class="card-link" data-toggle="collapse" href="#email">
                                     Change your email
+                                    <span class="float-right psw-icon"><i class="fas fa-caret-down"></i></span>
                                 </a>
                             </div>
                             <div id="email" class="collapse" data-parent="#accordion">

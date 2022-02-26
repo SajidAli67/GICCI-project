@@ -337,17 +337,17 @@ footer ul li a {
   font-size: 1.75rem;
   margin-top: 43px;
   border:none !important;
-  transition:all 1s;
+  /*transition:all 1s;*/
 }
-.btn-login:hover {
+/*.btn-login:hover {
   font-size: 1.9rem;
   box-shadow: 0px 50px 0 0px #176be9 inset , 0px -50px 0 0px #176be9 inset;
-  transition:all 1s;
-}
-.btn-login:active {
+  /*transition:all 1s;*/
+}*/
+/*.btn-login:active {
   box-shadow: none;
   transform: scale(0.9);
-}
+}*/
 .form-header {
   font-family: "Montserrat";
   font-style: normal;
@@ -362,7 +362,7 @@ footer ul li a {
 .form-container .custom-input {
   background: #ffffff;
   border: 2px solid rgba(0, 0, 0, 0.3);
-  height: 50px;
+  height: 40px;
 }
 .form-container .custom-input:hover,.custom-input:focus {
   border-color: #689ded;
@@ -1150,6 +1150,15 @@ margin-top: 20px;
   font-size: 14px !important;
 }
 .success{
-  border-color: green !important;
+  border-color: #a6ffa6 !important;
 }
 
+
+/*Added by nabeel*/
+label{
+  font-family: 'Montserrat';
+}
+
+.shiftright{
+  margin-left: 175px;
+}

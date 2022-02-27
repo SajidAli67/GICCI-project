@@ -182,7 +182,10 @@
     font-size: 16px;
   }
   .dashboard-header nav ul {
-    margin-top: 0rem;
+    margin-top: -3rem;
+  }
+  .dropdown-menu {
+    margin-left: 5rem
   }
 }
 @media (max-width: 390px) {
